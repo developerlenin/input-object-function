@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8">
+      <meta http.-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Document</title>
+   </head>
+<body>
+   <input type="text" id="check">
+   <button id="btn" onclick="z()">Enter</button>
+   <p id="para1">Name List:</p> <br>
+   <p id="para2">Number:</p><br>
+   <p id="para3">Character:</p><br>
+   <button id="btn1" onclick=" x()">Result</button>
+   <p id="para4">Result:</p><br>
+  
+<script>
+ var inputvlu=document.getElementById("check");
+ var paraone=document.getElementById("para1")
+ var paratwo=document.getElementById("para2")
+ var parathree=document.getElementById("para3")
+ var parafour=document.getElementById("para4")
+ 
+var person=[
+                         { name:"lenin",    number:9095,  character:"@"},
+                         {name:"susa",     number:9952,   character:"$"},
+						 {name:"selvan",  number:8667,  character:"#"},
+						 ]
+						 
+			function z(){
+			
+			if(  inputvlu.value == "name"){
+			var n="";
+			for(var m=0; m<person.length; m++){
+			n+=person[m].name+"<br>";
+			 paraone.innerHTML=n;
+			}	
+			}
+			else if (inputvlu.value == "number"){
+			var a="";
+			for(var looptwo=0; looptwo<person.length;looptwo++){
+			a+=person[looptwo].number+"<br>";
+			paratwo.innerHTML=a;
+			}
+			}
+			else if (inputvlu.value == "character"){
+			var b="";
+			for (var loopthree=0; loopthree<person.length; loopthree++){
+			b+=person[loopthree].character+"<br>";
+			parathree.innerHTML=b;
+			}
+			}
+			}
+		    function x(){
+			parafour.innerHTML = paraone.innerText +"<br>"+paratwo.innerText +"<br>"+parathree.innerText
+			}			
+</script>
+</body>
+</html>
+
+   function details(){
+						 let= z
+						 for(i=0; i<person.length, i++){
+		                  z+= person[i] "<br>"; 
+		                   }
+		                     document.getElementById("para1").inner.HTML= z;
+						  }
+						 
